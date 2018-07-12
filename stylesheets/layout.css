@@ -494,11 +494,11 @@ display: block;
 }
 @font-face {
   font-family: 'zocial';
-  src: url('../Font/zocial.eot?53546154');
-  src: url('../Font/zocial.eot?53546154#iefix') format('embedded-opentype'),
-       url('../Font/zocial.woff?53546154') format('woff'),
-       url('../Font/zocial.ttf?53546154') format('truetype'),
-       url('../Font/zocial.svg?53546154#zocial') format('svg');
+  src: url('../Font/zocial.eot');
+  src: url('../Font/zocial.eot#iefix') format('embedded-opentype'),
+       url('../Font/zocial.woff') format('woff'),
+       url('../Font/zocial.ttf') format('truetype'),
+       url('../Font/zocial.svg#zocial') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -538,19 +538,23 @@ display: block;
 	color: #fe495a;
 }
 .twitter:before {
-	content: "\e802";
-}	
+	content: "\f160";
+}
+
+.icon-github-circled:before {
+    content: '\f127';
+}
 
 .facebook:before {
 	content: "\e803";
 }
 
 .link:before {
-	content: "\e801";
+	content: "\f13c";
 }
 	
 .google:before {
-	content: "\e800";
+	content: "\f12a";
 }
 
 #dp_swf_engine{
