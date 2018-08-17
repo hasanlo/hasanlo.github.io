@@ -335,6 +335,25 @@ footer p {
 	display: inline-block;
 	margin:0 10px;
 }
+.socialContainer{
+	text-align:center;
+	padding-left:55px;
+}
+.header{
+	height: 5em;
+}
+@media only screen and (max-width: 959px) {
+	.social li{
+		display: inline-block;
+		margin:0 5px;
+	}
+	.socialContainer{
+		padding-left: 5px;
+	}
+	.header{
+		height: 0em;
+	}
+}
 
 #my_vector{
 padding: 5px;
