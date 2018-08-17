@@ -360,6 +360,10 @@ footer p {
 		display: inline-block;
 		margin:0 2px;
 	}
+
+	.footer{
+		height: 4em;
+	}
 }
 
 #my_vector{
