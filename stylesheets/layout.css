@@ -355,6 +355,13 @@ footer p {
 	}
 }
 
+@media only screen and (max-width: 500px) {
+	.social li{
+		display: inline-block;
+		margin:0 2px;
+	}
+}
+
 #my_vector{
 padding: 5px;
 display: block;
