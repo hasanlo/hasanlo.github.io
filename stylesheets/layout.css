@@ -776,3 +776,7 @@ display: block;
 	color: #000 !important; /* black */
 }
 
+
+.icon-instagram:before {
+    content: '\f133';
+}
