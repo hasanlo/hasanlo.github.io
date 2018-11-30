@@ -222,12 +222,19 @@ footer p {
 	text-align: center;
 	margin-bottom: 10px !important;
 	border-radius: 50%;
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -khtml-border-radius: 50%;
 	overflow: hidden;
 }
 @media only screen and (max-width: 400px) {
 
 	#myPic{
 		width:166px !important;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-khtml-border-radius: 50%;
+		border-radius: 50%;
 	}
 }
 #myPic{
