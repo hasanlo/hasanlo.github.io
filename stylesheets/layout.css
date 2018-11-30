@@ -219,7 +219,18 @@ footer p {
 
 
 .myPic{
-	padding-left: 10px;	
+	text-align: center;
+	margin-bottom: 10px !important;
+}
+@media only screen and (max-width: 400px) {
+
+	#myPic{
+		width:166px !important;
+	}
+}
+#myPic{
+	width:210px;
+	border-radius: 50%;
 }
 /* skill Styles */
 .skill_height{
