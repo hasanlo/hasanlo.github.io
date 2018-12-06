@@ -7,10 +7,24 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<url>
-  <loc>https://hasanlo.com/</loc>
-  <lastmod>2018-11-30T14:08:56+00:00</lastmod>
-</url>
-
-
+  <url>
+    <loc>https://hasanlo.com/</loc>
+    <lastmod>2018-12-06T13:14:42+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://hasanlo.com/blog/public/</loc>
+    <lastmod>2018-08-17T10:18:34+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://hasanlo.com/blog/public/posts/hugo/</loc>
+    <lastmod>2018-08-17T10:18:34+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://hasanlo.com/blog/public/posts/init/</loc>
+    <lastmod>2018-08-17T10:18:34+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
 </urlset>
