@@ -18,7 +18,7 @@
 	<meta charset="utf-8">
 	<meta name="dc.language" content="fa">
 	<meta http-equiv="Content-Language" content="fa">
-	<title> وب سایت شخصی میلاد حاجی حسنلو - برنامه نویس جاوا</title>
+	<title>وب سایت شخصی میلاد حاجی حسنلو - توسعه دهنده‌ی نرم افزار</title>
 	<!--let's try some SEO here,not hurt-->
 	<meta name="description" content="وب سایت شخصی میلاد حاجی حسنلو | برنامه نویس  |  سوابق و راه های ارتباطی">
 	<meta name="author" content="میلاد حاجی حسنلو">
@@ -86,8 +86,27 @@
 	<!--loading  | this is free loading > I downloaded this loading from site : PixelBuddha.net-->
 	<div id="loader">
 		<style>
+			@media (prefers-color-scheme: dark) {
+				body {
+					background: #202124 !important;
+				}
+
+				p {
+					color: #b5bfc5;
+				}
+
+				.page-header {
+					color: #b5bfc5;
+				}
+
+				::selection {
+					color: #202124;
+					background: #b5bfc5;
+				}
+			}
+
 			body {
-				font-family: "IRANS", arial;
+				font-family: "sahel", arial;
 				direction: rtl;
 				background: #bdc3c7;
 				background: #ece9e6;
@@ -236,7 +255,7 @@
 						</div>
 					</div>
 					<div class="eight columns font12">
-						<h1 class="page-header">میلاد حسنلو - برنامه نویس
+						<h1 class="page-header">میلاد حسنلو - توسعه دهنده‌ی نرم افزار
 							<span class="divider"></span>
 						</h1>
 
@@ -246,7 +265,7 @@
 							<br />
 							با زبان هایی مثل جاوا، پایتون، جاوااسکریپت و... سابقه برنامه نویسی دارم
 							<br />
-							چند سالی هست که به عنوان مدیر تیم های نرم افزاری فعالیت میکنم <br />
+							چند سالی هست که به عنوان راهبر تیم های نرم افزاری فعالیت میکنم <br />
 							در حال حاضر مدیر فنی
 							تیم وفاداری مشتریان شرکت
 							پرداخت الکترونیک پاسارگاد (فناپ)
@@ -331,3 +350,41 @@
 </body>
 
 </html>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-messaging.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+
+<script>
+	// // Your web app's Firebase configuration
+	var firebaseConfig = {
+		apiKey: "AIzaSyAB2oWgbAABZk4Tt3Frtook6rLTDQLqCNY",
+		authDomain: "test-a5f4c.firebaseapp.com",
+		databaseURL: "https://test-a5f4c.firebaseio.com",
+		projectId: "test-a5f4c",
+		storageBucket: "test-a5f4c.appspot.com",
+		messagingSenderId: "787077928633",
+		appId: "1:787077928633:web:9812c4cdf1e98a41f46d68",
+		measurementId: "G-XDGK8685J5"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	firebase.analytics();
+
+	const messaging = firebase.messaging();
+	messaging.usePublicVapidKey("BDx3IsTXuAzqH-jwkQl8CRI1V3y-E8hErbEhLX5KZ3q28vO4xbXfTOPegLkb4ASl5g1E93emDeJ-jiY8dkT_bO4");
+
+	messaging.requestPermission().then(function () {
+		return messaging.getToken();
+	}).then(function (token) {
+		console.log(token);
+	})
+		.catch(function (err) { console.log(err) });
+
+	messaging.onMessage(function (payload) {
+		console.log("onMessage", payload);
+	})
+</script>
