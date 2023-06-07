@@ -1,0 +1,45 @@
+<div class="post-auther">
+
+
+
+{{- if site.Params.label.icon }}
+{{- $img := resources.Get site.Params.label.icon }}
+{{- if $img }}
+    {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
+    {{- if hugo.IsExtended -}}
+        {{- $processableFormats = $processableFormats | append "webp" -}}
+    {{- end -}}
+    {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
+    {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
+        {{- if site.Params.label.iconHeight }}
+            {{- $img = $img.Resize (printf "x%d" site.Params.label.iconHeight) }}
+        {{ else }}
+            {{- $img = $img.Resize "x30" }}
+        {{- end }}
+    {{- end }}
+    <img src="{{ $img.Permalink }}" alt="logo" aria-label="logo"
+        height="{{- site.Params.label.iconHeight | default "30" -}}">
+{{- else }}
+<img src="{{- site.Params.label.icon | absURL -}}" alt="logo" aria-label="logo"
+    height="{{- site.Params.label.iconHeight | default "30" -}}">
+{{- end -}}
+{{- end -}}
+
+<span>
+<P>
+{{- if or .Params.author site.Params.author }}
+{{- $author := (.Params.author | default site.Params.author) }}
+{{- $author_type := (printf "%T" $author) }}
+{{- if (or (eq $author_type "[]string") (eq $author_type "[]interface {}")) }}
+{{- (delimit $author ", " ) }}
+{{- else }}
+{{- $author }}
+{{- end }}
+{{- end -}}
+</P>
+
+<a href="https://twitter.com/{{site.Params.twitter}}" target="_blank" rel="noopener noreferrer me" title="@{{site.Params.twitter}}">
+    @{{site.Params.twitter}}
+</a>
+</span>
+</div>

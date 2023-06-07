@@ -1,0 +1,157 @@
+baseURL: 'https://hasanlo.com'
+languageCode: 'en-us'
+title: 'Milad Hasanlo personal website'
+theme: 'PaperMod'
+paginate: 5
+nableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+custom_css: ["css/custom.css"]
+googleAnalytics: 
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  twitter: HasanloEn
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Milad Hasanlo personal website
+  description: "Milad Hasanlo personal website description"
+  keywords: [Blog, Portfolio, Personal,Milad hasanlo]
+  author: Milad Hasanlo
+  # author: ["Me", "You"] # multiple authors
+  images: "/images/1.jpg"
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+  footer: "Milad Hasanlo"
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  displayFullLangName: false
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: false
+  disableScrollToTop: true
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  cover:
+    image: "/images/apple-icon.png" 
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "/images/favicon.ico"
+    favicon16x16: "/images/favicon-16x16.png"
+    favicon32x32: "/images/favicon-32x32.png"
+    apple_touch_icon: "/images/apple-icon.png"
+    safari_pinned_tab: "/images/apple-icon.png"
+    theme_color: '#424242'
+
+  label:
+    text: "Home"
+    icon: "/images/apple-icon.png"
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: ExampleSite
+    subtitle: "This is subtitle"
+    imageUrl: "<img location>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Milad Hasanlo"
+    Content:  >
+        Hello there!  
+        
+        
+        My name is Milad Hasanlo, and I am a software developer and technology enthusiast. I love exploring the digital world and solving complex problems.
+        Creating elegant and efficient solutions brings me great satisfaction.
+
+
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/HasanloEn"
+    # - name: stackoverflow
+    #   url: "https://stackoverflow.com"
+    - name: github
+      url: "https://github.com/hasanlo"
+    - name: linkedin
+      url: "https://linkedin.com/in/milad-hasanlo"
+
+  analytics:
+    google:
+      SiteVerificationTag: ""
+    bing:
+      SiteVerificationTag: ""
+    yandex:
+      SiteVerificationTag: ""
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+  - name: search
+    url: search/
+    weight: 1
+  - name: archive
+    url: archives
+    weight: 5
+  # - identifier: post
+  #   name: posts
+  #   url: /posts/
+  #   weight: 12
+  - identifier: categories
+    name: categories
+    url: /categories/
+    weight: 15
+  - identifier: tags
+    name: tags
+    url: /tags/
+    weight: 20
+    # - identifier: example
+    #   name: example.org
+    #   url: https://example.org
+    #   weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# pygmentsUseClasses: true
+# markup:
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         style: monokai
