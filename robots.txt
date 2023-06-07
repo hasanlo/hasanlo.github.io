@@ -1,5 +1,0 @@
-Sitemap: http://hasanlo.com/sitemap.xml
-Sitemap: http://hasanlo.com/blog/public/sitemap.xml
-
-User-agent: * 
-Disallow: 

@@ -1,0 +1,136 @@
+.logo{
+    margin-right: 1px !important;
+}
+
+#menu{
+    margin-left: 1px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo{
+        margin-left: 5px !important;
+    }
+    #menu{
+        margin-right: 8px !important;
+    }
+    #menu a{
+        font-size: 14px;
+    }
+    #menu li+li{
+        margin-inline-start: 10px;
+    }
+    .logo a{
+        font-size: 17px;
+    }
+    .logo-switches,#theme-toggle{
+        margin-left: 1px !important;
+    }
+    .logo-switches , #theme-toggle{
+        margin-right: 0px !important;
+    }
+    
+    .info{
+        margin-top: 40px;
+        display: block !important;
+    }
+    
+    #info-image{
+        justify-content: right;
+        position: absolute;
+        top: 0px;
+        right: 25px;
+        margin-top: 1px !important;
+        height:  110px !important;
+        border-radius: 50%;
+    }
+    .social-icons a:not(:last-of-type){
+        margin-inline-end: 0px !important;
+    }
+    .social-icons{
+        padding-top: 2px;
+        font-size: 25px !important;
+    }
+}
+
+button#theme-toggle{
+    font-size: 18px !important;
+}
+
+
+.Powered{
+    font-size: 8px;;
+}
+
+.fa.fa-heart {
+    color: #ff3356;
+}
+.share-buttons{
+    font-size: 24px;
+}
+.share-buttons a:not(:last-of-type){
+    margin-inline-end: 22px;
+}
+
+.share-buttons a{
+    margin-top: auto;
+}
+
+.info{
+    display: flex;
+}
+
+#info-image{
+    margin-top: 100px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+footer{
+    padding-bottom: 1px !important;
+}
+.fa-clock{
+    margin: 3px;
+}
+
+.social-icons{
+    padding-top: 2px;
+    font-size: 30px;
+}
+.social-icons a:not(:last-of-type){
+    margin-inline-end: 3px;
+}
+
+.entry-content p{
+    text-align: justify;
+}
+
+.post-tags a{
+    line-height: 25px;
+    padding-inline-start: 7px;
+    padding-inline-end: 7px;
+}
+
+
+.first-entry{
+    margin-bottom: 10px;
+}
+
+.post-content p{
+    text-align: justify;
+}
+.breadcrumbs a{
+    font-size: 14px !important;
+}
+
+.main{
+    padding-top: 5px !important;
+}
+
+.post-header{
+    margin-top: 5px !important;
+}
+
+.post-title{
+    margin: 10px auto;
+}
