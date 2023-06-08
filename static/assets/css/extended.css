@@ -134,3 +134,7 @@ footer{
 .post-title{
     margin: 10px auto;
 }
+
+.post-content img{
+    margin: 1rem auto;
+}
